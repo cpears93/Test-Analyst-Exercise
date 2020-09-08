@@ -28,20 +28,25 @@ signUp.submit(03277626745)
 assert.equal(03277626745, signUp.phonenumber)
 });
 
-// user ('must recieve a one-time password', function () {
-//     assert.equal(true, true)
-// });
+user ('must recieve a one-time password', function () {
+signUp.submit("K4i&s@")    
+assert.equal("K4i&s@", signUp.password)
+});
 
-// user ('must create and confirm a 6 digit pin', function () {
-//     assert.equal(true, true)
-// });
+user ('must create and confirm a 6 digit pin', function () {
+signUp.submit(614829)   
+assert.equal(614829, signUp.digit_pin)
+});
 
-// user ('must confirm to the user a successful sign up', function () {
-//     assert.equal(true, true)
-// });
+user ('must confirm to the user a successful sign up', function () {
+signUp.submit("New User")  
+signUp.submit(7348)
+signUp.submit("Brian.Jennings@hotmail.com")
+signUp.submit(03277626745)
+signUp.submit("K4i&s@")
+signUp.submit(614829)
+assert.equal("New User", 7348, "Brian.Jennings@hotmail.com", 03277626745, "K4i&s@", 614829, signUp.confirm)
+});
 
 
-
-
-
-})
+});
