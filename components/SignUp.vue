@@ -1,4 +1,3 @@
-nes (140 sloc) 3.59 KB
 <template lang="html">
   <div class="login-page">
     <div class="new-user-form" v-if="!authenticated">
