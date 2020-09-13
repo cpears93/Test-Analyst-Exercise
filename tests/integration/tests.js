@@ -51,4 +51,3 @@ user('must confirm to the user a successful sign up', function () {
     element(by.css('#confirm_signup')).click();
     expect(confirm_signup.getAttribute('value')).to.equal('confirm_signup')
 });
-
